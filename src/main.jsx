@@ -67,9 +67,14 @@ const router = createBrowserRouter([
         path: '/post/:slug',
         element: <Post />
       }
+      
     ]
   }
-])
+],
+{
+    basename: '/blog-app'
+  }
+)
 
 
 createRoot(document.getElementById('root')).render(
